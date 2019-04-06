@@ -9,8 +9,8 @@ public class LoginAndRegisterController {
 	/*
 	 * to show login page 
 	 */
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	@RequestMapping(value = "/showLoginPage", method = RequestMethod.GET)
 	public String showLoginPage() {
-		return "login";
+		return "signin";
 	}
 }
