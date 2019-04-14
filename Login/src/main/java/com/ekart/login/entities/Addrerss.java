@@ -1,14 +1,23 @@
 package com.ekart.login.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
-public class Addrerss {
+@Table(name="ADDRESS")
+public class Addrerss extends AbstractEntity{
+	@Column
 	private String country;
+	@Column
 	private String state;
+	@Column
 	private String city;
+	@Column
 	private long pincode;
+	@Column(name="FLAT_NO")
 	private String flatNo;
+	@Column
 	private String street;
 
 	public String getCountry() {
@@ -58,5 +67,4 @@ public class Addrerss {
 	public void setStreet(String street) {
 		this.street = street;
 	}
-
 }

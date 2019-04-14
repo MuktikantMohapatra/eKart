@@ -10,10 +10,12 @@
 </head>
 <body>
 	<h3>eKart Shopping Site</h3>
-	<form:form action="${pageContext.request.contextPath}/authenticateTheUser" method="POST" >
-        User :<input type="text" name="username" >
-        Password :<input type="password" name="password" >
-        <button type="submit">Sign in</button>
-	</form:form>
+	<form action="" method="post">
+	   <pre>
+	      Email :<input type="text" name="email" />
+	    password: <input type="password" name="password" />
+	      <button type="submit">Sign in</button>
+	   </pre>
+	</form>
 </body>
 </html> 
